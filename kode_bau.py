@@ -1,28 +1,14 @@
-"""Modul perbaikan kode untuk melewati Pylint quality gate."""
+"""Modul perbaikan kode bau agar lolos Pylint."""
 
-NILAI_X = 10
-
-def fungsi_yang_benar(nilai_a, nilai_b, nilai_c):
-    """Fungsi contoh untuk mendemonstrasikan gaya penulisan PEP 8.
-
-    Args:
-        nilai_a: Parameter pertama.
-        nilai_b: Parameter kedua.
-        nilai_c: Parameter ketiga.
+def sapa_dunia():
+    """Fungsi sederhana untuk menyapa dunia.
 
     Returns:
-        Nilai kalkulasi jika kondisi terpenuhi, atau None.
+        String berisi pesan sapaan.
     """
-    global NILAI_X
-    if nilai_a is True and nilai_b is False and nilai_c is None:
-        hasil = NILAI_X + 1
-        print(f"Hasil: {hasil}")
-        return hasil
-    return None
-
-def main():
-    """Fungsi utama program."""
-    fungsi_yang_benar(True, False, None)
+    pesan = "Halo, Pylint!"
+    print(pesan)
+    return pesan
 
 if __name__ == "__main__":
-    main()
+    sapa_dunia()
