@@ -12,3 +12,4 @@ def sapa_dunia():
 
 if __name__ == "__main__":
     sapa_dunia()
+    
